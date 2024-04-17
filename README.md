@@ -22,5 +22,5 @@ Add the following line to your i3 config:
 bindsym $mod+Shift+t exec i3-toggle-terminal
 
 exec --no-startup-id kitty --title=dropdown
-for_window [title="^dropdown"] move scratchpad, resize set 100 ppt 1 ppt
+for_window [title="^dropdown"] move scratchpad
 ```
