@@ -27,7 +27,7 @@ async fn main() -> Result<()> {
     i3.send_msg_body(tokio_i3ipc::msg::Msg::RunCommand, msg_body)
         .await?;
 
-    msg_body = format!("[title=\"^dropdown\"] resize set width 100 ppt");
+    msg_body = format!("[title=\"^dropdown\"] resize set {} 300", rect.width);
     i3.send_msg_body(tokio_i3ipc::msg::Msg::RunCommand, msg_body)
         .await?;
 
